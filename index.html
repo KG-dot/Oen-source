@@ -82,6 +82,70 @@
         line-height: 1.8;
         color: #475569;
       }
+
+      .hero-image {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-top: 2rem;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+      }
+
+      .gallery-section {
+        max-width: 1200px;
+        margin: 5rem auto;
+        padding: 0 2rem;
+      }
+
+      .gallery-section h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        color: #111827;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 50px rgba(15, 23, 42, 0.15);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .gallery-item-text {
+        padding: 1.2rem;
+        background: white;
+      }
+
+      .gallery-item-text h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+        color: #111827;
+      }
+
+      .gallery-item-text p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #6b7280;
+      }
     </style>
   </head>
   <body>
@@ -101,6 +165,60 @@
       <p>
         This page now includes a refined navigation bar, clear menu links, and a strong call-to-action for a more modern presentation.
       </p>
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Professional workspace" class="hero-image">
     </main>
+
+    <section class="gallery-section">
+      <h2>Explore Our Work</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80" alt="Design showcase">
+          <div class="gallery-item-text">
+            <h3>Design Excellence</h3>
+            <p>Crafted with precision and attention to detail for stunning results.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="Development">
+          <div class="gallery-item-text">
+            <h3>Development</h3>
+            <p>Built with modern technologies and best practices in mind.</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" alt="Strategy">
+          <div class="gallery-item-text">
+            <h3>Strategy</h3>
+            <p>Thoughtful planning ensures your project achieves its goals.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&q=80" alt="Collaboration">
+          <div class="gallery-item-text">
+            <h3>Collaboration</h3>
+            <p>Working together to bring your vision to life.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80" alt="Innovation">
+          <div class="gallery-item-text">
+            <h3>Innovation</h3>
+            <p>Pushing boundaries with cutting-edge solutions.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&q=80" alt="Results">
+          <div class="gallery-item-text">
+            <h3>Results</h3>
+            <p>Delivering measurable outcomes that exceed expectations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
